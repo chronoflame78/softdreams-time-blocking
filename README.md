@@ -3,7 +3,7 @@
 A Google-Calendar-style **7-day time-blocking calendar** built as a React component.
 Create, move, inspect, edit and delete events directly on the grid.
 
-**Live demo:** _coming soon — add the public URL here after deploying_
+**Live demo:** [https://softdreams-time-blocking.netlify.app/](https://softdreams-time-blocking.netlify.app/)
 
 ![Screenshot](./docs/screenshot.png)
 
