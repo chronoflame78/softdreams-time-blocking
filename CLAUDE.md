@@ -23,9 +23,10 @@ required; the functional requirements are.
     and context menus by hand.
   - No state libraries — React hooks (`useState`/`useReducer`/context) are enough.
 - **Tailwind CSS is allowed** (and is the only styling dependency permitted).
-- Build tooling (Vite, TypeScript, Tailwind, PostCSS, ESLint) is fine as **devDependencies** —
+- Build & test tooling (Vite, TypeScript, Tailwind, PostCSS, ESLint, Vitest, Testing Library) is fine as **devDependencies** —
   the restriction is about runtime libraries in the component.
 - Keep components **small, well‑separated, and readable** — this is explicitly graded.
+- Write tests alongside features (see `TASKS.md` §12); keep `utils/` and `hooks/` pure so they are easy to unit-test.
 
 ## Functional requirements (checklist)
 
@@ -46,6 +47,7 @@ required; the functional requirements are.
 Default choices (change only if there's a good reason, and keep within the constraints):
 
 - Vite + React 18 + TypeScript, Tailwind CSS.
+- Tests: Vitest + jsdom + React Testing Library; tests co-located as `*.test.ts(x)` next to source.
 - Deploy target: static host (Vercel / Netlify / GitHub Pages).
 
 Suggested structure:
@@ -86,6 +88,8 @@ npm run dev       # local dev server
 npm run build     # production build → dist/
 npm run preview   # preview the production build
 npm run lint      # if ESLint is configured
+npm test          # vitest in watch mode
+npm run test:run  # single run (CI / pre-deploy)
 ```
 
 ## Deliverables
