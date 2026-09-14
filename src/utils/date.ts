@@ -66,11 +66,6 @@ export function formatFullDate(date: Date): string {
   return `${WEEKDAY_LONG[date.getDay()]}, ${date.getDate()} ${MONTH_LONG[date.getMonth()]} ${date.getFullYear()}`
 }
 
-/** "September 2026" */
-export function formatMonthYear(date: Date): string {
-  return `${MONTH_LONG[date.getMonth()]} ${date.getFullYear()}`
-}
-
 /** "GMT+07" / "GMT-05" / "GMT+05:30" for the local timezone. */
 export function formatTimezone(date: Date = new Date()): string {
   const offset = -date.getTimezoneOffset()

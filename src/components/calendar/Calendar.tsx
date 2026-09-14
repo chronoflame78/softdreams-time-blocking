@@ -10,7 +10,6 @@ import { EventFormDialog } from '../dialogs/EventFormDialog'
 import { ContextMenu } from '../ui/ContextMenu'
 import { CalendarGrid } from './CalendarGrid'
 import { CalendarHeader } from './CalendarHeader'
-import { CalendarToolbar } from './CalendarToolbar'
 
 type DialogState =
   | { kind: 'create'; range: TimeRange }
@@ -83,7 +82,6 @@ export function Calendar() {
 
   return (
     <div className="flex h-full flex-col bg-white text-[#3c4043]">
-      <CalendarToolbar days={days} />
       <CalendarHeader days={days} today={now} />
       <CalendarGrid
         days={days}

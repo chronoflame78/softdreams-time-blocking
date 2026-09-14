@@ -53,7 +53,7 @@ npm run test:coverage
 ```
 src/
   components/
-    calendar/    Calendar (state + wiring), CalendarToolbar, CalendarHeader, CalendarGrid,
+    calendar/    Calendar (state + wiring), CalendarHeader, CalendarGrid,
                  TimeGutter, HourLines, DayColumn, EventBlock, SelectionBlock, CurrentTimeLine
     dialogs/     EventFormDialog (create/edit), EventDetailDialog, FormField
     ui/          Modal, ContextMenu, Button — hand-written primitives
